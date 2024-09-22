@@ -15,7 +15,7 @@ for el in str:
             _map[el] = 1
 
 for el in _map.keys():
-    _map[el] = _map[el] / str_len
+    _map[el] = round(_map[el] / str_len, 2)
 
 list_letter = {k: v for k, v in sorted(_map.items(), key=lambda item: item[1])}
 for el in list_letter:
